@@ -1,0 +1,27 @@
+[package]
+name = "disk-arbitration-sys"
+version = "0.1.0"
+edition = "2021"
+license = "MIT or Apache-2.0"
+authors = ["Hera Chamorro <hera@hera.wtf>"]
+description = "Bindings to the DiskArbitration framework for macOS."
+homepage = "https://github.com/herabit/disk-arbitration-sys"
+repository = "https://github.com/herabit/disk-arbitration-sys"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+core-foundation-sys = "0.8"
+io-kit-sys = "0.4"
+
+[build-dependencies]
+bindgen = "0.69.1"
+
+[features]
+default = []
+macos_10_14_4_features = []
+
+[package.metadata.docs.rs]
+all-features = true
+default-target = "x86_64-apple-darwin"
