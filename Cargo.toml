@@ -2,7 +2,7 @@
 name = "disk-arbitration-sys"
 version = "0.1.0"
 edition = "2021"
-license = "MIT or Apache-2.0"
+license = "MIT OR Apache-2.0"
 authors = ["Hera Chamorro <hera@hera.wtf>"]
 description = "Bindings to the DiskArbitration framework for macOS."
 homepage = "https://github.com/herabit/disk-arbitration-sys"
